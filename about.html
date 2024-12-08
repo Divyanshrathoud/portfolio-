@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Divyansh Kumar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background:linear-gradient(rgb(7, 151, 207),rgb(56, 55, 55));
+            color: #333;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+         
+        }
+
+        .about-section {
+            margin-top: 3rem;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 150, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .about-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 150, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: #0077be;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 119, 190, 0.3);
+        }
+
+        .about-content {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .profile-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-size: 100%;
+            /* object-fit: cover; */
+            border: 5px solid #0077be;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            color: #0077be;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills {
+            margin-top: 2rem;
+        }
+
+        .skills h3 {
+            font-size: 1.5rem;
+            color: #0077be;
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: #0077be;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .profile-img img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="about-section">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="img/Snapchat-1981964681.jpg" alt="Divyansh Kumar">
+                </div>
+                <div class="about-text">
+                    <h2>Hi, I'm Divyansh Kumar</h2>
+                    <p>I am a Frontend Web Developer. I liven in Khirkiya, Madhya Pradesh. I love creating beautiful and functional websites that provide great user experiences.</p>
+                    <p>Currently pursuing my degree in Data Science, I spend my time learning new technologies and working on exciting web projects. I have a strong foundation in HTML, CSS, and JavaScript.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                            <span class="skill-item">Basic JavaScript</span>
+                            <span class="skill-item">Responsive Design</span>
+                            <span class="skill-item">github</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

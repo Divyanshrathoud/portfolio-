@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webside</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="portfolio_container">
+        <ul class="navlist">
+            <li><a href="#" class="activ">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Project.html">project</a></li>
+            <li><a href="connect.html">content</a></li>
+        </ul>
+        <div class="left-container">
+            <div class="icons">
+                <a href="https://www.instagram.com/divyansh_rathoud?igsh=MTBtZHd1MDY5Mjlsaw=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.bing.com/ck/a?!&&p=0bb043d9798a4f27572028a9f0d9207a1b5c72a3543b28762fe6ea5501773734JmltdHM9MTczMzUyOTYwMA&ptn=3&ver=2&hsh=4&fclid=1449e7e3-e9b4-66b7-10ec-f35ce82f674d&psq=Divyansh+rathoud+linkedin+login&u=a1aHR0cHM6Ly9pbi5saW5rZWRpbi5jb20vaW4vZGl2eWFuc2gtcmF0aG91ZC05YTY3YjgzMzk&ntb=1"><i class="fa-brands fa-linkedin-in"></i></a>
+                <i class="fa-brands fa-twitter"></i>
+                <a href="https://github.com/DivyanshKumar123"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="content">
+                <p class="intro">Hi ! I Am  <span>Divyansh kumar</span></p>
+                <h1 class="detail">front-end developer  </h1>
+                <p class="detail-2">hi! I an Divyansh kumar, Frontend Web Devloper.pationate in coding and I love marval movies .</p>
+                <div class="btn-container">
+                    <a href="Project.html"><button>projects</button></a>
+                    <button>amy new project</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-container"></div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let texts = {
+        heading: "front-end developer",
+        intro: "Divyansh kumar", 
+        detail: "hi! I an Divyansh kumar, Frontend Web Devloper.pationate in coding and  I love marval movies."
+    };
+    
+    let indexes = {
+        heading: 0,
+        intro: 0,
+        detail: 0
+    };
+    
+    const speed = 50;
+
+    function typeText(element, text, property) {
+        if (indexes[property] < text.length) {
+            element.textContent += text.charAt(indexes[property]);
+            indexes[property]++;
+            setTimeout(() => typeText(element, text, property), speed);
+        }
+    }
+
+    window.onload = function() {
+        const introSpan = document.querySelector('.intro span');
+        const heading = document.querySelector('.detail');
+        const detail = document.querySelector('.detail-2');
+        
+        introSpan.textContent = '';
+        heading.textContent = '';
+        detail.textContent = '';
+        
+        setTimeout(() => typeText(introSpan, texts.intro, 'intro'), 0);
+        setTimeout(() => typeText(heading, texts.heading, 'heading'), 1000);
+        setTimeout(() => typeText(detail, texts.detail, 'detail'), 2500);
+    }
+</script>
+</html>
+
+
