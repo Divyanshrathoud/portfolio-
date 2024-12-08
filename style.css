@@ -53,7 +53,7 @@ width: 30%;
 }
 .icons .fa-brands{
     color: #bbb;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .icons{
@@ -65,12 +65,12 @@ width: 30%;
 }
 
 .content{
-    margin-left: 4rem;
+    margin-left: 3rem;
     
 }
 
 .content .intro{
-    font-size: 1.5rem;
+    font-size: 25px;
     color: #f1efef;
 }
   
@@ -81,13 +81,13 @@ width: 30%;
 .content .detail{
     font-size: 4rem;
     color: #064dcf;
-    max-width: 45rem;
+    max-width: 40rem;
 }
 
 .content .detail-2{
     font-size: 1rem;
     color: wheat;
-    max-width: 38rem;
+    max-width: 30rem;
     margin: 1.1rem 0 3rem 0;
     line-height: 1.8rem;
     
@@ -143,12 +143,12 @@ button:nth-child(2):hover{
 
 .circle:nth-child(1){
     background: linear-gradient(90deg, transparent,#262525 50%);
-    width: 38rem;
+    width: 30rem;
 }
 
 .circle:nth-child(2){
     background-color: rgb(194, 180, 180);
-    width: 30rem;
+    width: 25rem;
    background-image: url(img/d.jpg);
    background-size: 100%;
    background-repeat: no-repeat;
