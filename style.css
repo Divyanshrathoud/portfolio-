@@ -79,7 +79,7 @@ width: 30%;
 }
 
 .content .detail{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #064dcf;
     max-width: 40rem;
 }
@@ -149,7 +149,7 @@ button:nth-child(2):hover{
 .circle:nth-child(2){
     background-color: rgb(194, 180, 180);
     width: 25rem;
-   background-image: url(d.jpg);
+   background-image: url(img/d.jpg);
    background-size: 100%;
    background-repeat: no-repeat;
    border: 1rem solid rgb(192, 185, 185);
@@ -181,3 +181,5 @@ button:nth-child(2):hover{
     height: .1rem;
     bottom: -5px;
 }
+
+
